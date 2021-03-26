@@ -1,0 +1,478 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "Yalla Feen Porject",
+    "description": "Yalla Feen Api helps you interact with recommendation trips system ",
+    "license": {
+      "name": "MIT",
+      "url": "https://opensource.org/licenses/MIT"
+    }
+  },
+
+  "host": "localhost:3000",
+  "basePath": "/",
+
+  "tags": [
+    
+    {
+      "name": "Places",
+      "description": "API for Places in the system"
+    },
+    {
+      "name": "Users",
+      "description": "API for users in the system"
+    },
+    {
+      "name": "Categories",
+      "description": "API for Categories in the system"
+    },
+    {
+      "name": "Tags",
+      "description": "API for Tags in the system"
+    },
+    {
+      "name": "Comments",
+      "description": "API for Comment in the system"
+    }
+    
+
+  ],
+  "schemes": [
+    "http"
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+
+  "paths": {
+    "/user/list": {
+      "get": {
+        "tags": [
+          "Users"
+        ],
+        "summary": "Get all users in system",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/Users"
+            }
+          }
+        }
+      }
+    },
+    "/user/signup": {
+      "post": {
+        "tags": [
+          "Users"
+        ],
+        "summary": "Get all users in system",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/Users"
+            }
+          }
+        }
+      }
+    },
+    "/user/login": {
+      "post": {
+        "tags": [
+          "Users"
+        ],
+        "summary": "Get all users in system",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/Users"
+            }
+          }
+        }
+      }
+    },
+    "/user/delete/:id": {
+      "delete": {
+        "tags": [
+          "Users"
+        ],
+        "summary": "Get all users in system",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/Users"
+            }
+          }
+        }
+      }
+    },
+    "/user/update/:id": {
+      "put": {
+        "tags": [
+          "Users"
+        ],
+        "summary": "Get all users in system",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/Users"
+            }
+          }
+        }
+      }
+    },
+
+    "/place/list": {
+      "get": {
+        "tags": [
+          "Places"
+        ],
+        "summary": "Get all places in system",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/Places"
+            }
+          }
+        }
+      }
+    },
+
+    "/place/create": {
+      "post": {
+        "tags": [
+          "Places"
+        ],
+        "summary": "Get all places in system",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/Places"
+            }
+          }
+        }
+      }
+    },
+    "/place/add-rating/:id": {
+      "post": {
+        "tags": [
+          "Places"
+        ],
+        "summary": "Get all places in system",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/Places"
+            }
+          }
+        }
+      }
+    },
+    "/place/add-tag/:id": {
+      "post": {
+        "tags": [
+          "Places"
+        ],
+        "summary": "Get all places in system",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/Places"
+            }
+          }
+        }
+      }
+    },
+    "/place/create-comment/:id": {
+      "post": {
+        "tags": [
+          "Places"
+        ],
+        "summary": "Get all places in system",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/Places"
+            }
+          }
+        }
+      }
+    },
+    "/place/delete/:id": {
+      "delete": {
+        "tags": [
+          "Places"
+        ],
+        "summary": "Get all places in system",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/Places"
+            }
+          }
+        }
+      }
+    },
+    "/place/update/:id": {
+      "put": {
+        "tags": [
+          "Places"
+        ],
+        "summary": "Get all places in system",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/Places"
+            }
+          }
+        }
+      }
+    },
+
+    
+    "/category/list": {
+      "get": {
+        "tags": [
+          "Categories"
+         
+        ],
+        "summary": "Get all Categories in system",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/Categories"
+            }
+          }
+        }
+      }
+    },
+    "category/create":{
+        "post":{
+          "tags":[
+            "Categories"
+          ]
+        }
+    },  
+    "category/delete/:id":{
+      "delete":{
+        "tags":[
+          "Categories"
+        ]
+      }},"category/update/:id":{
+        "put":{
+          "tags":[
+            "Categories"
+          ]
+        } },
+
+    "/tag/list": {
+      "get": {
+        "tags": [
+          "Tags"
+        ],
+        "summary": "Get all Tags in system",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/Tags"
+            }
+          }
+        }
+      }
+    },
+    "/tag/delete/:id": {
+      "delete": {
+        "tags": [
+          "Tags"
+        ],
+        "summary": "Get all Tags in system",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/Tags"
+            }
+          }
+        }
+      }
+    },
+
+    "/comment/list": {
+      "get": {
+        "tags": [
+          "Comments"
+        ],
+        "summary": "Get all Tags in system",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/Tags"
+            }
+          }
+        }
+      }
+    },
+
+    "/comment/update/:id": {
+      "put": {
+        "tags": [
+          "Comments"
+        ],
+        "summary": "Get all Tags in system",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/Tags"
+            }
+          }
+        }
+      }
+    },
+
+    "/comment/delete/:id": {
+      "delete": {
+        "tags": [
+          "Comments"
+        ],
+        "summary": "Get all Tags in system",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/Tags"
+            }
+          }
+        }
+      }
+    }
+        
+        
+    
+    
+  },
+  "definitions": {
+    "User": {
+      "required": [
+        "name",
+        "_id",
+        "places"
+      ],
+      "properties": {
+        "_id": {
+          "type": "integer",
+          "uniqueItems": true
+        },
+        "isPublic": {
+          "type": "boolean"
+        },
+        "name": {
+          "type": "string"
+        },
+        "books": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "amount": {
+                "type": "number"
+              }
+            }
+          }
+        },
+        "companies": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "Users": {
+      "type": "array",
+      "$ref": "#/definitions/User"
+    },
+    "Place":{
+      "required":[
+          "title",
+          "_id",
+          "type",
+          "description",
+          "category"
+      ],
+      "properties":{
+        "_id": {
+          "type": "integer",
+          "uniqueItems": true
+        },
+        "title":{
+          "type":"string"
+        }, "description":{
+          "type":"string"
+        }, "category":{
+          "type":"string"
+        }, "type":{
+          "type":"string"
+        }
+      }
+
+    },
+    "Places":{
+      "type":"array",
+      "$ref":"#/definitions/Place"
+    },
+    "Tag":{
+      "required":[
+        "_id",
+        "title"
+      ],
+      "properties":{
+        "title":{
+          "type":"string"
+        }
+      }
+    },
+    "Tags":{
+      "type":"array",
+      "$ref":"#/definitions/Tag"
+    },
+
+    "Category":{
+      "required":[
+        "_id",
+        "title"
+      ],
+      "properties":{
+        "title":{
+          "type":"string"
+        }
+      }
+    },
+    "Categories":{
+      "type":"array",
+      "$ref":"#/definitions/Category"
+    }
+    
+  }
+}
